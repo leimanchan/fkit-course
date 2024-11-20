@@ -26,5 +26,5 @@ export const POST: RequestHandler = async ({ request, cookies }) => {
 
 export const DELETE: RequestHandler = async ({ cookies }) => {
     cookies.delete('__session', { path: '/' });
-    return json({ status: 'signedOut' });
+    return json({ status: 'signedOut' }); 
 }
